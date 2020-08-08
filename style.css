@@ -1,9 +1,8 @@
 *{
-    margin: 0;
     padding: 0;
 }
 #game {
-    width: 500px;
+    width: 600px;
     height: 200px;
     border: 1px solid black;
 }
@@ -13,7 +12,8 @@
     position: relative;
     top: 150px;
     margin-left: 40px;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .animate{
     animation: jump 500ms;
@@ -27,32 +27,46 @@
     position: relative;
     top: 110px;
     left: 480px;
-    background-image: url("Images/cactusBig0000.png");
-    background-size: contain;
-    animation: block 1s infinite linear;
+    animation: mediumCactus 1500ms infinite linear;
     animation-delay: 1s;
 }
-@keyframes block {
-    0% {left:480px;}
-    100% {left:-40px;}
+@keyframes mediumCactus {
+    0% {left:650px;
+        background-image: none}
+    1% {background-image: url("Assets/Images/cactusBig0000.png");
+        background-size: contain;}
+    100% {left:-40px;
+        background-image: url("Assets/Images/cactusBig0000.png");
+        background-size: contain;}
 }
 @keyframes jump {
     0% {top: 150px;
     }
     30% {
         top: 80px;
-        background-image: url("Images/dinoJump0000.png");
+        background-image: url("Assets/Images/dinoJump0000.png");
     }
     70% {
         top: 80px;
     }
     100% {
         top: 150px;
-        background-image: url("Images/dinorun0000.png")
+        background-image: url("Assets/Images/dinorun0000.png")
     }
 }
 
 @keyframes DinoRun {
-    0% {background-image: url("Images/dinorun0000.png");}
-    100% {background-image: url("Images/dinorun0001.png");}
+    0% {background-image: url("Assets/Images/dinorun0000.png");}
+    100% {background-image: url("Assets/Images/dinorun0001.png");}
 }
+@font-face {
+    font-family: my8Bit;
+    src:url("Assets/press-start-2p-font/PressStart2P-vaV7.ttf");
+    font-weight: normal;
+}
+
+#Score {
+    color: dimgrey;
+    font-family: my8Bit;
+}
+

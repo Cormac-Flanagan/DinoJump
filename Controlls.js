@@ -1,9 +1,11 @@
 var character =
     document.getElementById("character");
 var block = document.getElementById("block");
+var score = 0;
+document.addEventListener('keypress', jump);
 
-function jump() {
-    if (character.classList != "animate") {
+function jump(e) {
+    if (character.classList != "animate" && e.code == "Space") {
         character.classList.remove("run")
         character.classList.add("animate");
     }
@@ -13,7 +15,7 @@ function jump() {
     }, 500)
 }
 
-var checkDead = setInterval(function(){
+var checkDead = setInterval(function() {
     var characterTop =
         parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     var blockLeft =
@@ -24,3 +26,8 @@ var checkDead = setInterval(function(){
         alert("U Lose")
     }
 }, 10);
+
+setInterval(function () {
+    score++;
+    document.getElementById("Score").innerHTML = score
+}, 100);
