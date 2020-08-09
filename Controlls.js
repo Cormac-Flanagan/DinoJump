@@ -16,11 +16,6 @@ function jump(e) {
 }
 
 var checkDead = setInterval(function() {
-    var characterTop =
-        parseInt(window.getComputedStyle(character).getPropertyValue("top"));
-    var blockLeft =
-        parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-
     rect1 = document.getElementById("character").getBoundingClientRect()
     rect2 = document.getElementById("block").getBoundingClientRect()
 
@@ -41,3 +36,4 @@ setInterval(function () {
     score++;
     document.getElementById("Score").innerHTML = score
 }, 100);
+
