@@ -27,22 +27,22 @@ function changeStance(e) {
     }, 500)
 }
 
-// var checkDead = setInterval(function() {
-//     cactus1 = document.getElementById(`regCactus`)
-//     rect1 = document.getElementById("character").getBoundingClientRect()
-//     rect2 = cactus1.getBoundingClientRect()
+var checkDead = setInterval(function() {
+    cactus1 = document.getElementById(`enemy`)
+    rect1 = document.getElementById("character").getBoundingClientRect()
+    rect2 = cactus1.getBoundingClientRect()
 
-//     var overlap = !(rect1.right < rect2.left ||
-//         rect1.left > rect2.right ||
-//         rect1.bottom < rect2.top ||
-//         rect1.top > rect2.bottom)
-//
-//     if(overlap === true){
-//         medCactus.style.animation = "none"
-//         medCactus.style.display = "none"
-//         alert("U Lose")
-//     }
-// }, 10);
+    var overlap = !(rect1.right < rect2.left ||
+        rect1.left > rect2.right ||
+        rect1.bottom < rect2.top ||
+        rect1.top > rect2.bottom)
+
+    if(overlap === true){
+        medCactus.style.animation = "none"
+        medCactus.style.display = "none"
+        alert("U Lose")
+    }
+}, 10);
 
 setInterval(function () {
     if (gameRunning) {

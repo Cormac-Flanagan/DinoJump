@@ -1,7 +1,7 @@
 var running = false;
 var cacCount = 0;
 function myMove() {
-    cacCount ++
+    cacCount ++;
     var elem = document.getElementById(`enemy`);
     randomType(elem, 0, 2);
     var pos = 600;
@@ -17,7 +17,7 @@ function myMove() {
             running = false;
             cacCount = 0;
         } else {
-            pos -= 2;
+            pos -= (2 + score/300);
         }
         elem.style.left = pos + "px";
     }
@@ -33,23 +33,24 @@ function releaseMove() {
 }
 
 function randomType(changed, enMintype, enMaxtype) {
-    var Enemy_Type = Math.floor(Math.random(enMintype) * Math.floor(enMaxtype));
+    var Enemy_Type = Math.floor(Math.random(enMintype) * Math.floor(enMaxtype+1));
     var x, y;
     switch (Enemy_Type) {
         case 0:
             x = "regCactus";
-            y = ["pterodactyl"]
+            y = ["highPterodactyl", "midPterodactyl"];
             break
         case 1:
-            x = "pterodactyl"
-            y = ["regCactus"]
+            x = "highPterodactyl";
+            y = ["regCactus", "midPterodactyl"];
             break
+        case 2:
+            x = "midPterodactyl";
+            y = ["regCactus", "highPterodactyl"]
     }
     for (i of y) {
-        changed.classList.remove(i)
+        changed.classList.remove(i);
     }
-    changed.classList.add(x)
-    document.getElementById("Debug").innerHTML(Enemy_Type);
-    return x;
+    changed.classList.add(x);
 }
 
