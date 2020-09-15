@@ -1,16 +1,19 @@
 *{
     padding: 0;
 }
+
 #game {
     width: 600px;
     height: 200px;
     border: 1px solid black;
+    background-image: url("Assets/Images/background.jpg");
+    background-size: cover;
 }
 #character{
     width: 45px;
     height: 50px;
-    position: relative;
     top: 150px;
+    position: relative;
     margin-left: 40px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -21,24 +24,37 @@
 .run {
     animation: DinoRun 400ms infinite linear;
 }
-#block {
+.crouch {
+    top: 180px;
+    animation: DinoDuck 50ms linear infinite;
+}
+
+#enemy {
+    position: absolute;
+    background-size: cover;
+    left: 600px;
+}
+
+.regCactus {
+    background-image: url("Assets/Images/cactusBig0000.png");
+    top: 210px;
     width: 20px;
     height: 40px;
-    position: relative;
-    top: 110px;
-    left: 480px;
-    animation: mediumCactus 1500ms infinite linear;
-    animation-delay: 1s;
+
 }
-@keyframes mediumCactus {
-    0% {left:650px;
-        background-image: none}
-    1% {background-image: url("Assets/Images/cactusBig0000.png");
-        background-size: contain;}
-    100% {left:-40px;
-        background-image: url("Assets/Images/cactusBig0000.png");
-        background-size: contain;}
+.highPterodactyl {
+    background-image: url("Assets/Images/pterodactyl.png");
+    top: 180px;
+    width: 36px;
+    height: 22px;
 }
+.midPterodactyl {
+    background-image: url("Assets/Images/pterodactyl.png");
+    top: 200px;
+    width: 36px;
+    height: 22px;
+}
+
 @keyframes jump {
     0% {top: 150px;
     }
@@ -59,6 +75,18 @@
     0% {background-image: url("Assets/Images/dinorun0000.png");}
     100% {background-image: url("Assets/Images/dinorun0001.png");}
 }
+
+@keyframes DinoDuck {
+    0% {
+        top: 180px;
+        background-image: url("Assets/Images/dinoduck0000.png");
+    }
+    100% {
+        top: 180px;
+        background-image: url("Assets/Images/dinoduck0001.png");
+    }
+}
+
 @font-face {
     font-family: my8Bit;
     src:url("Assets/press-start-2p-font/PressStart2P-vaV7.ttf");
