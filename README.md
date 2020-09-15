@@ -27,4 +27,4 @@ After running press any button to start and refresh the page to retry
   - Clean Up gamesprites
 ___
 ## Author 
-Cormac Flanagan (cormacflanagan12@gmail.com)
+RonaldMacdonalds
