@@ -29,7 +29,7 @@
     animation: DinoDuck 50ms linear infinite;
 }
 
-#enemy {
+.standard {
     position: absolute;
     background-size: cover;
     left: 600px;
