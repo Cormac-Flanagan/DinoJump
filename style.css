@@ -28,7 +28,9 @@
     top: 180px;
     animation: DinoDuck 50ms linear infinite;
 }
-
+.dead {
+    background-image: url("Assets/Images/dinoDead0000.png");
+}
 .standard {
     position: absolute;
     background-size: cover;

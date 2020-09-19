@@ -24,21 +24,23 @@ function changeStance(e) {
 }
 
 var checkDead = setInterval(function() {
-    var z = deadEn;
-    while (z < cacCount) {
-        z++
-        cactus1 = document.getElementById(`enemy` + z.toString());
-        rect1 = document.getElementById("character").getBoundingClientRect();
-        rect2 = cactus1.getBoundingClientRect();
-
-        var overlap = !(rect1.right < rect2.left ||
-            rect1.left > rect2.right ||
-            rect1.bottom < rect2.top ||
-            rect1.top > rect2.bottom)
+    var colBox = 0;
+    while (colBox < cacCount) {
+        colBox++
+        console.log(colBox)
+        let character = document.getElementById("character")
+        var cactus1 = document.getElementById(`enemy` + colBox.toString());
+        var enBox = cactus1.getBoundingClientRect();
+        var charRec = character.getBoundingClientRect();
+        var overlap = !(enBox.right < charRec.left ||
+            enBox.left > charRec.right ||
+            enBox.bottom < charRec.top ||
+            enBox.top > charRec.bottom)
 
         if (overlap === true) {
-            medCactus.style.animation = "none"
-            medCactus.style.display = "none"
+            cactus1.style.animation = "none";
+            cactus1.style.display = "none";
+            character.classList.add("dead")
             alert("U Lose")
         }
     }

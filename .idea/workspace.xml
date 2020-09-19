@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f3bca837-af27-4bb6-a803-dbf755ca889a" name="snapshot_3.19.9.20.1A" comment="Name Scheme: (branch.day.month.year.version)&#10;&#10;Current System For adding multiple elements &#10;&#10;Is NOT FINISHED, Bugs include:&#10;'Breaking after getting 300 on scoreboard'&#10;'Constant Reset of position'&#10;&#10;FIXED:&#10;&#10;Hitbox's Breaking&#10;Weird Acceleration&#10;Excess of enemies " />
+    <list id="588a2601-d8b4-425d-8be0-a7ead763ba29" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hj8MX5P4UTAxPWgQ47DT5O5mfH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/DinoJump/Index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.Index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="588a2601-d8b4-425d-8be0-a7ead763ba29" name="Default Changelist" comment="" />
+      <changelist id="f3bca837-af27-4bb6-a803-dbf755ca889a" name="snapshot_3.19.9.20.1A" comment="Name Scheme: (branch.day.month.year.version)&#10;&#10;Current System For adding multiple elements &#10;&#10;Is NOT FINISHED, Bugs include:&#10;'Breaking after getting 300 on scoreboard'&#10;'Constant Reset of position'&#10;&#10;FIXED:&#10;&#10;Hitbox's Breaking&#10;Weird Acceleration&#10;Excess of enemies " />
+      <created>1600513092488</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600513092488</updated>
+      <workItem from="1600513093522" duration="8131000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="3030" y="569" width="427" height="261" key="VCS.EditChangelistDialog" timestamp="1600521199664">
+      <screen x="1920" y="0" width="2560" height="1400" />
+    </state>
+    <state x="3030" y="569" width="427" height="261" key="VCS.EditChangelistDialog/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1600521199664" />
+    <state x="3283" y="472" width="672" height="678" key="search.everywhere.popup" timestamp="1600519517092">
+      <screen x="1920" y="0" width="2560" height="1400" />
+    </state>
+    <state x="3283" y="472" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1600519517092" />
+  </component>
+</project>

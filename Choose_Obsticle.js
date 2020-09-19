@@ -1,30 +1,35 @@
 var cacCount = 0;
 var deadEn = 0;
 var stopLoop = false;
+var elmPos = {
+    enemy1: 600,
+    enemy1spe: 2,
+};
+var lastRelease = 0;
 function releaseOb(enNum) {
     var newguy = document.createElement("div");
     newguy.setAttribute("id", "enemy" + enNum.toString());
     let deadly = document.getElementById("deadly1");
     deadly.append(newguy);
-    document.getElementById("Debug").innerText = cacCount;
     var elem = document.getElementById(`enemy`+ cacCount.toString());
-    console.log(elem)
     randomType(elem, 0, 2);
-    var pos = 600;
+
     var meantPos;
-    var c = deadEn;
+    var c = 0;
     while (c < cacCount) {
         c++
-        console.log(c)
         var id = setInterval(frame,5);
-        var elems = document.getElementById(`enemy` + c.toString());
+        var enID = `enemy` + c.toString()
+        var elems = document.getElementById(enID);
+        elmPos[enID] = 600;
+        elmPos[enID + "spe"] = 2 + score/500;
     }
 
-    function frame() {
+    function frame(string) {
         meantPos = elems.style.left.replace('px','');
-        meantPos = parseFloat(meantPos);
-        document.getElementById("Debug").innerText = meantPos;
-
+        meantPos = Math.floor(meantPos);
+        var ID = elems.id;
+        var pos = elmPos[ID];
         if (pos <= 10) {
             elems.style.visibility = 'hidden';
         } else {
@@ -33,26 +38,26 @@ function releaseOb(enNum) {
         if (pos <= 5) {
             clearInterval(id);
             elems.remove()
-            deadEn ++
+            deadEn++
+            cacCount--
         } else {
-            pos -= (2 + score/300);
+            pos -= (elmPos[ID + "spe"]);
         }
+        elmPos[ID] = Math.floor(pos);
         elems.style.left = pos + "px";
+        document.getElementById("Debug").innerText = pos;
     }
 }
 
 function releaseMove() {
-    var setRealease = Math.floor(Math.random() * 15000) + 500;
+    var setRealease = Math.floor(Math.random() * 1500) + 1000;
+    console.log(setRealease);
     setTimeout(function() {
-        if (stopLoop === false) {
-            var i = 0;
-            for (; i < 2; i++) {
-                cacCount++;
-                var release = releaseOb(cacCount);
-            }
-        }
-        else {
-            stopLoop = true
+        if (cacCount <= 2 && score-lastRelease >= 10) {
+            lastRelease = score;
+            stopLoop = true;
+            cacCount++;
+            var release = releaseOb(cacCount);
         }
     }, setRealease)
 }
