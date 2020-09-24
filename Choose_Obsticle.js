@@ -5,6 +5,7 @@ var elmPos = {
     enemy1: 600,
     enemy1spe: 2,
 };
+var c = 0;
 var lastRelease = 0;
 function releaseOb(enNum) {
     var newguy = document.createElement("div");
@@ -13,19 +14,18 @@ function releaseOb(enNum) {
     deadly.append(newguy);
     var elem = document.getElementById(`enemy`+ cacCount.toString());
     randomType(elem, 0, 2);
-
     var meantPos;
-    var c = 0;
-    while (c < cacCount) {
-        c++
-        var id = setInterval(frame,5);
-        var enID = `enemy` + c.toString()
-        var elems = document.getElementById(enID);
-        elmPos[enID] = 600;
-        elmPos[enID + "spe"] = 2 + score/500;
-    }
 
-    function frame(string) {
+    c++
+    var id = setInterval(frame,5);
+    var enID = `enemy` + c.toString()
+    var elems = document.getElementById(enID);
+    elmPos[enID] = 600;
+    elmPos[enID + "spe"] = 3 + score/500;
+    elmPos[enID + "frameId"] = id;
+
+
+    function frame() {
         meantPos = elems.style.left.replace('px','');
         meantPos = Math.floor(meantPos);
         var ID = elems.id;
@@ -36,10 +36,11 @@ function releaseOb(enNum) {
             elems.style.visibility = 'visible';
         }
         if (pos <= 5) {
-            clearInterval(id);
+            clearInterval(elmPos[ID + "frameId"]);
             elems.remove()
             deadEn++
-            cacCount--
+            cacCount = 0;
+            c = 0;
         } else {
             pos -= (elmPos[ID + "spe"]);
         }

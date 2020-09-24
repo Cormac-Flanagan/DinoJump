@@ -1,0 +1,15 @@
+Index: Choose_Obsticle.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Choose_Obsticle.js	(date 1600933222919)
++++ Choose_Obsticle.js	(date 1600933222919)
+@@ -40,6 +40,7 @@
+             elems.remove()
+             deadEn++
+             cacCount = 0;
++            c = 0;
+         } else {
+             pos -= (elmPos[ID + "spe"]);
+         }
