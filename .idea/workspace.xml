@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:multiRelease" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3bca837-af27-4bb6-a803-dbf755ca889a" name="snapshot_3.19.9.20.1A" comment="Name Scheme: (branch.day.month.year.version)&#10;&#10;Current System For adding multiple elements &#10;&#10;Is NOT FINISHED, Bugs include:&#10;'Breaking after getting 300 on scoreboard'&#10;'Constant Reset of position'&#10;&#10;FIXED:&#10;&#10;Hitbox's Breaking&#10;Weird Acceleration&#10;Excess of enemies " />
-    <list id="588a2601-d8b4-425d-8be0-a7ead763ba29" name="Default Changelist" comment="" />
+    <list default="true" id="3afba4eb-f673-4a05-8b6e-6dee1e743511" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,28 +64,164 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="588a2601-d8b4-425d-8be0-a7ead763ba29" name="Default Changelist" comment="" />
-      <changelist id="f3bca837-af27-4bb6-a803-dbf755ca889a" name="snapshot_3.19.9.20.1A" comment="Name Scheme: (branch.day.month.year.version)&#10;&#10;Current System For adding multiple elements &#10;&#10;Is NOT FINISHED, Bugs include:&#10;'Breaking after getting 300 on scoreboard'&#10;'Constant Reset of position'&#10;&#10;FIXED:&#10;&#10;Hitbox's Breaking&#10;Weird Acceleration&#10;Excess of enemies " />
+      <changelist id="3afba4eb-f673-4a05-8b6e-6dee1e743511" name="Default Changelist" comment="" />
       <created>1600513092488</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600513092488</updated>
       <workItem from="1600513093522" duration="8131000" />
-      <workItem from="1600929261947" duration="3381000" />
+      <workItem from="1600929261947" duration="6611000" />
+      <workItem from="1601016438201" duration="6644000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="multiRelease" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="3030" y="569" width="427" height="261" key="VCS.EditChangelistDialog" timestamp="1600521199664">
-      <screen x="1920" y="0" width="2560" height="1400" />
+    <state x="872" y="358" key="#Deployment" timestamp="1600934972329">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="358" key="#Deployment/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1600934972329" />
+    <state x="1153" y="521" key="FileChooserDialogImpl" timestamp="1600935062458">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1153" y="521" key="FileChooserDialogImpl/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1600935062458" />
+    <state width="2539" height="234" key="GridCell.Tab.0.bottom" timestamp="1601023664390">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="492" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1600937455838" />
+    <state width="2539" height="234" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1601023664390" />
+    <state width="2539" height="234" key="GridCell.Tab.0.center" timestamp="1601023664390">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="492" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1600937455838" />
+    <state width="2539" height="234" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1601023664390" />
+    <state width="2539" height="234" key="GridCell.Tab.0.left" timestamp="1601023664390">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="492" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1600937455838" />
+    <state width="2539" height="234" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1601023664390" />
+    <state width="2539" height="234" key="GridCell.Tab.0.right" timestamp="1601023664390">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="492" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1600937455838" />
+    <state width="2539" height="234" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1601023664390" />
+    <state width="2539" height="234" key="GridCell.Tab.1.bottom" timestamp="1601023667865">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="492" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1600937466088" />
+    <state width="2539" height="234" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1601023667865" />
+    <state width="2539" height="234" key="GridCell.Tab.1.center" timestamp="1601023667865">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="492" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1600937466088" />
+    <state width="2539" height="234" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1601023667865" />
+    <state width="2539" height="234" key="GridCell.Tab.1.left" timestamp="1601023667865">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="492" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1600937466088" />
+    <state width="2539" height="234" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1601023667865" />
+    <state width="2539" height="234" key="GridCell.Tab.1.right" timestamp="1601023667865">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="492" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1600937466088" />
+    <state width="2539" height="234" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1601023667865" />
+    <state width="2539" height="234" key="GridCell.Tab.2.bottom" timestamp="1601023664311">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="492" key="GridCell.Tab.2.bottom/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1600937455753" />
+    <state width="2539" height="234" key="GridCell.Tab.2.bottom/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1601023664311" />
+    <state width="2539" height="234" key="GridCell.Tab.2.center" timestamp="1601023664311">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="492" key="GridCell.Tab.2.center/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1600937455753" />
+    <state width="2539" height="234" key="GridCell.Tab.2.center/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1601023664311" />
+    <state width="2539" height="234" key="GridCell.Tab.2.left" timestamp="1601023664311">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="492" key="GridCell.Tab.2.left/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1600937455753" />
+    <state width="2539" height="234" key="GridCell.Tab.2.left/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1601023664311" />
+    <state width="2539" height="234" key="GridCell.Tab.2.right" timestamp="1601023664311">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="492" key="GridCell.Tab.2.right/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1600937455753" />
+    <state width="2539" height="234" key="GridCell.Tab.2.right/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1601023664311" />
+    <state width="2539" height="234" key="GridCell.Tab.3.bottom" timestamp="1601023664311">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="492" key="GridCell.Tab.3.bottom/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1600937455753" />
+    <state width="2539" height="234" key="GridCell.Tab.3.bottom/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1601023664311" />
+    <state width="2539" height="234" key="GridCell.Tab.3.center" timestamp="1601023664311">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="492" key="GridCell.Tab.3.center/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1600937455753" />
+    <state width="2539" height="234" key="GridCell.Tab.3.center/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1601023664311" />
+    <state width="2539" height="234" key="GridCell.Tab.3.left" timestamp="1601023664311">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="492" key="GridCell.Tab.3.left/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1600937455753" />
+    <state width="2539" height="234" key="GridCell.Tab.3.left/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1601023664311" />
+    <state width="2539" height="234" key="GridCell.Tab.3.right" timestamp="1601023664311">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2539" height="492" key="GridCell.Tab.3.right/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1600937455753" />
+    <state width="2539" height="234" key="GridCell.Tab.3.right/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1601023664311" />
+    <state x="1110" y="569" width="427" height="261" key="VCS.EditChangelistDialog" timestamp="1601023890463">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="3030" y="569" width="427" height="261" key="VCS.EditChangelistDialog/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1600521199664" />
-    <state x="3283" y="472" width="672" height="678" key="search.everywhere.popup" timestamp="1600519517092">
-      <screen x="1920" y="0" width="2560" height="1400" />
+    <state x="1110" y="569" key="VCS.EditChangelistDialog/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1600935386521" />
+    <state x="1110" y="569" key="VCS.EditChangelistDialog/0.0.2560.1400/-1920.360.1920.1040@0.0.2560.1400" timestamp="1601023890463" />
+    <state x="516" y="173" width="1714" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600935369511">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="516" y="173" width="1714" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1600935369511" />
+    <state x="1363" y="472" width="672" height="678" key="search.everywhere.popup" timestamp="1600935574265">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="3283" y="472" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1600519517092" />
+    <state x="1363" y="472" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1600935574265" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Choose_Obsticle.js</url>
+          <line>54</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JavascriptDebugType">
+        <watch expression="elmPos" language="JavaScript" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

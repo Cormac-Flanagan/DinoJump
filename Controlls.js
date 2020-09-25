@@ -1,3 +1,5 @@
+//Most Recent 1.0.0
+
 var character =
     document.getElementById("character");
 var medCactus = document.getElementById(`enemy`);
@@ -37,12 +39,12 @@ var checkDead = setInterval(function() {
             enBox.bottom < charRec.top ||
             enBox.top > charRec.bottom)
 
-        if (overlap === true) {
-            cactus1.style.animation = "none";
-            cactus1.style.display = "none";
-            character.classList.add("dead")
-            alert("U Lose")
-        }
+        // if (overlap === true) {
+        //     alert("U Lose")
+        //     cactus1.style.animation = "none";
+        //     cactus1.style.display = "none";
+        //     character.classList.add("dead")
+        // }
     }
 }, 10);
 
