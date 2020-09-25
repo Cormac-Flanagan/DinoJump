@@ -7,6 +7,7 @@ var elmPos = {
 };
 var c = 1;
 var lastRelease = 0;
+var liveframe = 0;
 function releaseOb(enNum) {
     if (document.getElementById('enemy' + cacCount.toString()) === null ) {
         let deadly = document.getElementById("deadly1");
@@ -18,14 +19,18 @@ function releaseOb(enNum) {
         var meantPos;
     }
 
-    var id = setInterval(frame,10);
     var enID = `enemy` + enNum.toString()
     var elems = document.getElementById(enID);
     elmPos[enID] = 600;
-    elmPos[enID + "spe"] = 3 + score/80000;
+    if (3 + score/8000 < 3.5) {
+        var speed = 3 + score/8000;
+    } else {
+        speed = 3.5
+    }
+    elmPos[enID + "spe"] = speed;
+    var id = setInterval(frame,5);
+    liveframe++
     elmPos[enID + "frameId"] = id;
-
-
     function frame() {
            c++
         if (c > 3) {
@@ -44,25 +49,25 @@ function releaseOb(enNum) {
             curElm.style.visibility = 'visible';
         }
         if (pos <= 5) {
-            clearInterval(elmPos[ID + "frameId"]);
             curElm.remove()
             deadEn++
             cacCount = 0;
+            liveframe--
+            clearInterval(elmPos[enID + "frameId"]);
         } else {
             pos -= (elmPos[ID + "spe"]);
         }
 
         elmPos[ID] = Math.floor(pos);
         curElm.style.left = pos + "px";
-        document.getElementById("Debug").innerText = elmPos["enemy1spe"];
     }
 }
 
 function releaseMove() {
+
     var setRealease = Math.floor(Math.random() * 1500) + 10;
-    console.log(setRealease);
     setTimeout(function() {
-        if (cacCount <= 2 && score-lastRelease >= 100) {
+        if (cacCount <= 2 && score-lastRelease >= 20) {
             lastRelease = score;
             stopLoop = true;
             cacCount++;

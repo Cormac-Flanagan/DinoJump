@@ -1,5 +1,5 @@
-//Most Recent 1.0.0
-
+//Most Recent Final Release
+let mortal = false;
 var character =
     document.getElementById("character");
 var medCactus = document.getElementById(`enemy`);
@@ -29,7 +29,6 @@ var checkDead = setInterval(function() {
     var colBox = 0;
     while (colBox < cacCount) {
         colBox++
-        console.log(colBox)
         let character = document.getElementById("character")
         var cactus1 = document.getElementById(`enemy` + colBox.toString());
         var enBox = cactus1.getBoundingClientRect();
@@ -39,12 +38,12 @@ var checkDead = setInterval(function() {
             enBox.bottom < charRec.top ||
             enBox.top > charRec.bottom)
 
-        // if (overlap === true) {
-        //     alert("U Lose")
-        //     cactus1.style.animation = "none";
-        //     cactus1.style.display = "none";
-        //     character.classList.add("dead")
-        // }
+        if (overlap === true && mortal === true) {
+            alert("U Lose")
+            cactus1.style.animation = "none";
+            cactus1.style.display = "none";
+            character.classList.add("dead")
+        }
     }
 }, 10);
 
@@ -52,6 +51,8 @@ setInterval(function () {
     if (gameRunning) {
         score++;
         releaseMove();
+        document.getElementById("Debug").innerText = liveframe;
+
     }
     document.getElementById("Score").innerHTML = score
 }, 100);
