@@ -1,5 +1,5 @@
 //Most Recent Final Release
-let mortal = false;
+let mortal = true;
 var character =
     document.getElementById("character");
 var medCactus = document.getElementById(`enemy`);
