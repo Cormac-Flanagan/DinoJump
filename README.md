@@ -22,7 +22,6 @@ After running press any button to start and refresh the page to retry
 - Adding of the other enemies from the chrome game
 - Adjust controlls of the game
 - Adjusting the Chance of each enemies
-- Allow for multiple enemies to be on screen at once
 - Improve Graphics 
   - Clean Up gamesprites
 ___
