@@ -1,5 +1,6 @@
 //Most Recent Final Release
-let mortal = true;
+
+let mortal = false;
 var character =
     document.getElementById("character");
 var medCactus = document.getElementById(`enemy`);
@@ -49,11 +50,15 @@ var checkDead = setInterval(function() {
 
 setInterval(function () {
     if (gameRunning) {
-        score++;
+        moveObjects()
+        score += 1;
+
         releaseMove();
         document.getElementById("Debug").innerText = liveframe;
 
     }
     document.getElementById("Score").innerHTML = score
-}, 100);
+}, 10);
+
+
 
